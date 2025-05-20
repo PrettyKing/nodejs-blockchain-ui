@@ -10,7 +10,7 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ isConnected, setIsConnected }) => {
-  const [serverUrl, setServerUrl] = useState('https://blockchain-worker.chalee695469701.workers.dev')
+  const [serverUrl, setServerUrl] = useState('http://localhost:3001')
   
   const handleConnect = () => {
     // 设置axios baseURL
@@ -44,8 +44,8 @@ const Layout: React.FC<LayoutProps> = ({ isConnected, setIsConnected }) => {
                   type="text"
                   value={serverUrl}
                   onChange={(e) => setServerUrl(e.target.value)}
-                  className="input text-black"
-                  placeholder="https://blockchain-worker.chalee695469701.workers.dev"
+                  className="input"
+                  placeholder="http://localhost:3001"
                 />
                 <button
                   onClick={handleConnect}
