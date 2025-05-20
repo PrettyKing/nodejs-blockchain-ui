@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import Card from '../components/Card'
-import blockchainService, { Wallet as WalletType, Balance } from '../services/blockchainService'
+import blockchainService, { Wallet as WalletType } from '../services/blockchainService'
 import { WalletIcon, PlusIcon, ClipboardIcon, EyeIcon, EyeSlashIcon } from '@heroicons/react/24/outline'
 import { toast } from 'react-toastify'
 

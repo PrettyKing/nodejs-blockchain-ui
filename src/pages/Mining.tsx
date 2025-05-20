@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import Card from '../components/Card'
-import blockchainService, { Blockchain, Block, Transaction } from '../services/blockchainService'
+import blockchainService, { Block, Transaction } from '../services/blockchainService'
 import { ArrowPathIcon, BoltIcon, CubeIcon } from '@heroicons/react/24/outline'
 import { toast } from 'react-toastify'
 
@@ -240,9 +240,6 @@ const Mining = () => {
                 </thead>
                 <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
                   {pendingTransactions.map((tx, index) => {
-                    const fromWallet = wallets.find(w => w.publicKey === tx.fromAddress)
-                    const toWallet = wallets.find(w => w.publicKey === tx.toAddress)
-                    
                     return (
                       <tr key={index}>
                         <td className="px-4 py-2 whitespace-nowrap text-xs">

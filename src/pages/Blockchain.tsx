@@ -2,8 +2,7 @@ import { useEffect, useState } from 'react'
 import Card from '../components/Card'
 import blockchainService, { Blockchain, Block } from '../services/blockchainService'
 import { 
-  CubeIcon, 
-  ClockIcon, 
+  CubeIcon,
   ChevronDownIcon, 
   ChevronUpIcon 
 } from '@heroicons/react/24/outline'
