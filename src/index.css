@@ -27,6 +27,15 @@ body {
   min-height: 100vh;
 }
 
+/* 修复选择框的文本颜色问题 */
+option {
+  @apply text-gray-800 bg-white;
+}
+
+.dark option {
+  @apply text-gray-200 bg-gray-700;
+}
+
 @layer components {
   .btn {
     @apply px-4 py-2 font-semibold rounded text-white transition-all duration-200;
