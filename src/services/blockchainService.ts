@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const BASE_URL = '/api'
+const BASE_URL = 'https://blockchain-worker.chalee695469701.workers.dev'
 
 // 定义类型
 export interface Block {
