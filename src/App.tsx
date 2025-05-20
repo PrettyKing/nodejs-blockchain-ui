@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
 import Dashboard from './pages/Dashboard'
-import Blockchain from './pages/Blockchain'
+import BlockchainExplorer from './pages/Blockchain'
 import Wallet from './pages/Wallet'
 import Transaction from './pages/Transaction'
 import Mining from './pages/Mining'
@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout isConnected={isConnected} setIsConnected={setIsConnected} />}>
           <Route index element={<Dashboard isConnected={isConnected} />} />
-          <Route path="blockchain" element={<Blockchain />} />
+          <Route path="blockchain" element={<BlockchainExplorer />} />
           <Route path="wallet" element={<Wallet />} />
           <Route path="transaction" element={<Transaction />} />
           <Route path="mining" element={<Mining />} />
