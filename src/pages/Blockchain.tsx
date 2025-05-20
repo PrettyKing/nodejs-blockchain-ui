@@ -8,7 +8,8 @@ import {
   ChevronUpIcon 
 } from '@heroicons/react/24/outline'
 
-const Blockchain = () => {
+// 将组件名称从Blockchain改为BlockchainExplorer以避免与导入的类型名称冲突
+const BlockchainExplorer = () => {
   const [blockchain, setBlockchain] = useState<Blockchain | null>(null)
   const [loading, setLoading] = useState(false)
   const [expandedBlocks, setExpandedBlocks] = useState<{ [key: string]: boolean }>({})
@@ -217,4 +218,4 @@ const Blockchain = () => {
   )
 }
 
-export default Blockchain
+export default BlockchainExplorer
